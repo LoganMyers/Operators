@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script src="jquery-3.5.1.js"></script>
+<script src="scripts.js"></script>
+</head>
+<body>
+	<div class="grid-container">
+		<div class="grid-item"></div>
+		<div class="grid-item">Click the boxes to test JavaScript Operators on the number below</div>
+		<div class="grid-item"></div>  
+		<div class="grid-item"></div>
+		<div class="grid-item"><p id="scoreTracker"></p></div>
+		<div class="grid-item"></div>
+		
+		<div class="grid-item"><h1 onclick="addValue()">+=</h1>
+			<br><p>Adds value on the right side of the equals to the variable on the left</p>
+		</div>
+		<div class="grid-item"><h1 onclick="subValue()">-=</h1>
+			<br><p>Subtracts the value on the right side of the equals sign from the variable on the left</p>
+		</div>
+		<div class="grid-item"><h1 onclick="multiplyValue()">*=</h1>
+			<br><p>Multiplies the variable on the left side of the equals sign and the value on the right side of the equals sign</p>
+		</div>  
+		<div class="grid-item"><h1 onclick="devideValue()">/=</h1>
+			<br><p>Devides the value  in the variable by the value on the right side of the equals sign</p>
+		</div>
+		<div class="grid-item"><h1 onclick="addOne()">++</h1>
+			<br><p>Placed directly after a variable name, ++ adds one to the variable</p>
+		</div>
+		<div class="grid-item"><h1 onclick="subOne()">--</h1>
+			<br><p>Placed directly after a variable name, -- subtracts one from the variable</p>
+		</div>
+	</div>
+
+	<script>
+	
+		document.getElementById("scoreTracker").innerHTML = score;
+		
+	</script>
+
+</body>
+</html>
